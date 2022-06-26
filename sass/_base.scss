@@ -1,0 +1,82 @@
+/*
+
+COLORS
+
+Orange: #EE4D47
+
+Blue: #0F264C
+
+Orange light 1: #FEF8F5
+Orange light 2: #FDEDE8
+Orange light 3: #FCDDD4
+
+Orange dark 1: #402B2B
+
+*/
+// :root {
+
+$color-orange-1: #EE4D47;
+
+$color-blue-1: #0F264C;
+
+$color-orange-light-1: #FEF8F5;
+$color-orange-light-2: #FDEDE8;
+$color-orange-light-3: #FCDDD4;
+
+$color-orange-dark-1: #402B2B;
+
+$shadow-1: 0rem 2rem 4rem .2rem rgba($color-orange-1, .1);
+$shadow-2: 0rem 1rem 3rem .2rem rgba($color-orange-1, .1);
+
+
+// }
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'DM Serif Display', serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  line-height: 4rem;
+  color: rgba($color-orange-dark-1, 1);
+
+}
+
+a:link {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+// Margins
+
+.mb-s {
+  margin-bottom: 5rem !important;
+}
+
+.mb-m {
+  margin-bottom: 10rem !important;
+}
+
+.mb-l {
+  margin-bottom: 20rem !important;
+}
+
+.mb-h {
+  margin-bottom: 40rem !important;
+}
