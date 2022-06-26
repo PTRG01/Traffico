@@ -1,0 +1,19 @@
+// Buttons
+
+.btn-inline {
+  display: flex;
+  max-width: 22rem;
+  height: auto;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba($color-orange-1, 1);
+  padding: 2rem 2.4rem 2rem 2.4rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  z-index: 50;
+}

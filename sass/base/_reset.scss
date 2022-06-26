@@ -1,0 +1,47 @@
+/*
+
+COLORS
+
+Orange: #EE4D47
+
+Blue: #0F264C
+
+Orange light 1: #FEF8F5
+Orange light 2: #FDEDE8
+Orange light 3: #FCDDD4
+
+Orange dark 1: #402B2B
+
+*/
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'DM Serif Display', serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  line-height: 4rem;
+  color: rgba($color-orange-dark-1, 1);
+}
+
+a:link {
+  text-decoration: none;
+  color: #fff;
+
+}

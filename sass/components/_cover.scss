@@ -1,0 +1,33 @@
+// Header background
+
+
+.scene-cont {
+  width: auto;
+
+  &__img-1 {
+    width: 158.7rem;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__img-2 {
+    z-index: 5;
+    width: auto;
+    height: 50.6rem;
+    position: absolute;
+    right: 42rem;
+    top: 44.3rem;
+  }
+
+  &__img-3 {
+    z-index: 5;
+    width: 81.1rem;
+    height: auto;
+    position: absolute;
+    left: -21.1rem;
+    top: 79rem;
+  }
+}

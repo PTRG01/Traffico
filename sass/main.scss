@@ -1,3 +1,14 @@
-@import "base";
-@import "layout";
-@import "components";
+@import "utils/variables";
+@import "base/reset";
+@import "base/typography";
+@import "layout/layout";
+@import "components/buttons";
+@import "components/cover";
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/about";
+@import "layout/apply";
+@import "layout/faq";
+@import "layout/forms";
+@import "layout/clients";
+@import "layout/footer";

@@ -1,0 +1,33 @@
+// Sections
+
+.container {
+  max-width: 160rem;
+  height: auto;
+  margin: 0 auto;
+  background-color: $color-orange-light-1;
+  z-index: -100;
+  overflow: hidden;
+}
+
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+// Columns
+
+.section-column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2.5rem;
+  gap: 4rem;
+  flex: 1 1;
+  max-width: 57rem;
+}
+
+
+.image-cont {
+  display: flex;
+}

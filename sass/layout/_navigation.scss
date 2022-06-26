@@ -1,0 +1,31 @@
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  flex: 0 0 20%;
+  margin: 4rem 25.2rem 9rem 0rem;
+  z-index: 100;
+
+}
+
+.menu {
+  display: flex;
+  flex: 0 2 56%;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  gap: 1.4rem;
+  margin-right: 1rem;
+
+
+  &__item {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 18rem;
+  }
+}

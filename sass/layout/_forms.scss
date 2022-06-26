@@ -1,0 +1,13 @@
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  z-index: 500;
+  border-radius: .5rem;
+  padding: 5.2rem 7.5rem 5.2rem 7.5rem;
+  max-width: -55rem;
+  box-sizing: content-box;
+  margin-bottom: 8rem;
+  box-shadow: $shadow-1;
+  transform: translateX(-7rem);
+}
