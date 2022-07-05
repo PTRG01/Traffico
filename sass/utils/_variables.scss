@@ -1,3 +1,19 @@
+/*
+
+COLORS
+
+Orange: #EE4D47
+
+Blue: #0F264C
+
+Orange light 1: #FEF8F5
+Orange light 2: #FDEDE8
+Orange light 3: #FCDDD4
+
+Orange dark 1: #402B2B
+
+*/
+
 // Color variables
 
 $color-orange-1: #EE4D47;
@@ -10,10 +26,31 @@ $color-orange-light-3: #FCDDD4;
 
 $color-orange-dark-1: #402B2B;
 
+$color-white: #fff;
+
+$color-primary: $color-orange-light-1;
+$color-secondary: $color-orange-light-2;
+$color-tertiary: $color-orange-light-3;
+
+$color-accent-1: $color-orange-1;
+$color-accent-2: $color-blue-1;
+
+$color-text-1: $color-orange-dark-1;
+$color-text-2: $color-white;
+
+// Font variables
+
+$font-primary: 'DM Serif Display',
+serif;
+$font-secondary: 'Rubik',
+sans-serif;
+
 // Shadow variables
 
-$shadow-1: 0rem 2rem 4rem .2rem rgba($color-orange-1, .1);
-$shadow-2: 0rem 1rem 3rem .2rem rgba($color-orange-1, .1);
+$shadow-1: 0rem 2rem 4rem .2rem rgba($color-accent-1, .1);
+$shadow-2: 0rem 1rem 3rem .2rem rgba($color-accent-1, .1);
+$shadow-3: 0rem 1rem 2rem .2rem rgba($color-accent-1, .4);
+
 
 
 

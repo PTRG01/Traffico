@@ -4,8 +4,8 @@
   max-width: 160rem;
   height: auto;
   margin: 0 auto;
-  background-color: $color-orange-light-1;
-  z-index: -100;
+  background-color: $color-primary;
+  z-index: -10;
   overflow: hidden;
 }
 
@@ -24,7 +24,7 @@
   padding-right: 2.5rem;
   gap: 4rem;
   flex: 1 1;
-  max-width: 57rem;
+  max-width: 50%;
 }
 
 

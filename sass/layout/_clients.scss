@@ -2,30 +2,22 @@
 
 .clients {
   z-index: 500;
-  display: flex;
+  @include flexbox(initial, initial, initial);
   margin: 0 auto;
   max-width: 117rem;
 
-  &__heading {
-    display: flex;
-    flex-direction: column;
+  &__heading-box {
+    @include flexbox(column, flex-start, flex-start);
     max-width: 45rem;
     min-width: 30rem;
-    align-items: flex-start;
-    justify-content: flex-start;
   }
 
-  &-carousel {
-    display: flex;
-    flex-direction: column;
+  &__carousel {
+    @include flexbox(column, initial, initial);
     margin-left: 8rem;
 
-
     &__nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
+      @include flexbox(row, flex-end, center);
       margin: 1rem;
       height: 4rem;
       max-width: 74rem;
@@ -33,37 +25,36 @@
     }
 
     &__cont {
-      display: flex;
+      @include flexbox(row, space-evenly, center);
+      mask-image: linear-gradient(90deg, black 40%, transparent);
       -webkit-mask-image: linear-gradient(90deg, black 40%, transparent);
     }
 
     &__box {
+      @include flexbox(column, space-between, flex-start);
       margin: 1rem;
       margin-bottom: 3rem;
-      background-color: #fff;
+      background-color: $color-text-2;
       width: 43rem;
       height: 36rem;
       outline: 1rem solid transparent;
       box-shadow: $shadow-2;
+      border-radius: 5px;
+    }
+
+    &__box:hover {
+
+      @include animation-2;
     }
 
     &__text {
-      font-family: 'Rubik', sans-serif;
-      font-size: 1.6rem;
-      font-weight: 300;
-      line-height: 3rem;
       margin-bottom: 6rem;
       max-width: 32rem;
       margin: 6rem 5.2rem 4rem 6rem;
     }
 
     &__client-box {
-      display: flex;
-      align-items: center;
-      font-family: 'Rubik', sans-serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      line-height: 3rem;
+      @include flexbox(row, initial, center);
       margin-left: 6rem;
       margin-bottom: 4rem;
     }

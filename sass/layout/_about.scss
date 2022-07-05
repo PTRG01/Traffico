@@ -3,31 +3,20 @@
   height: auto;
   margin: 0 auto;
   margin-top: 70rem;
-  display: flex;
-  justify-content: space-evenly;
+  @include flexbox(row, space-evenly, initial);
   max-width: 117rem;
-}
 
-.about__img-1 {
-  max-width: 57.5rem;
-  margin-left: -6rem;
-}
+  &__img-1 {
+    max-width: 57.5rem;
+    margin-left: -6rem;
+  }
 
-.about-text {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 4rem;
-}
 
-.about-call {
-  font-family: 'Rubik', sans-serif;
-  font-size: 2.4rem;
-  font-weight: 500;
-  line-height: 3.6rem;
-  color: $color-orange-dark-1;
-  background-color: rgba($color-orange-light-2, 1);
-  padding: 3rem 3.5rem;
-  border-left: 1rem solid rgba($color-orange-1, 1);
-  border-radius: 5px;
+
+  &__call {
+    background-color: rgba($color-secondary, 1);
+    padding: 3rem 3.5rem;
+    border-left: 1rem solid rgba($color-accent-1, 1);
+    border-radius: 5px;
+  }
 }

@@ -1,22 +1,15 @@
 .apply {
-  display: flex;
+  @include flexbox(row, space-evenly, initial);
   width: 100%;
   height: auto;
   margin: 0 auto;
   margin-top: 8rem;
-  justify-content: space-evenly;
   max-width: 117rem;
-}
 
-.apply-text {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 4rem;
-}
 
-.apply__img-1 {
-  max-width: 57.5rem;
-  margin-top: -10rem;
-  margin-left: -8rem;
+  &__img-1 {
+    max-width: 57.5rem;
+    margin-top: -10rem;
+    margin-left: -8rem;
+  }
 }

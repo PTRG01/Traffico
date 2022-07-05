@@ -1,31 +1,38 @@
 .user-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #fff;
+  @include flexbox(row, space-between, center);
   flex: 0 0 20%;
   margin: 4rem 25.2rem 9rem 0rem;
-  z-index: 100;
+  z-index: 10;
 
+  &__menu {
+    @include flexbox(row, space-between, center);
+    flex: 0 2 56%;
+    list-style: none;
+    gap: 1.4rem;
+    margin-right: 1rem;
+
+    &__item a:hover {
+      background-color: none;
+      @include animation-1;
+    }
+  }
 }
 
-.menu {
-  display: flex;
-  flex: 0 2 56%;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+.footer {
+  &__nav {
+    @include flexbox(initial, space-between, center);
+    width: 100%;
+    z-index: 50;
 
-  gap: 1.4rem;
-  margin-right: 1rem;
+    &__menu {
+      @include flexbox(initial, initial, initial);
+      gap: 10rem;
+      justify-self: flex-end;
+      list-style: none;
+    }
 
-
-  &__item {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 18rem;
+    &__menu:last-child {
+      margin-right: 10rem;
+    }
   }
 }
