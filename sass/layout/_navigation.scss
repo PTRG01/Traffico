@@ -1,4 +1,4 @@
-.user-nav {
+.header__nav {
   @include flexbox(row, space-between, center);
   flex: 0 0 20%;
   margin: 4rem 25.2rem 9rem 0rem;
@@ -10,11 +10,6 @@
     list-style: none;
     gap: 1.4rem;
     margin-right: 1rem;
-
-    &__item a:hover {
-      background-color: none;
-      @include animation-1;
-    }
   }
 }
 

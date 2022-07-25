@@ -15,8 +15,9 @@ html {
 }
 
 body {
-  @include font($font-primary, 2rem, 300, 4rem, $color-text-1);
+  @include font(2rem, 4rem, $font-secondary, 300, $color-text-1);
   background-color: $color-primary;
+
 
 }
 

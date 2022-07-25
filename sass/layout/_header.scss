@@ -7,18 +7,18 @@
 
 .header {
   position: relative;
-  @include flexbox(column, space-between, initial);
+  @include flexbox(column, space-between);
   width: 100%;
   height: auto;
   padding-left: 24rem;
 }
 
 // Header background
-.scene-cont {
+.header__content {
   width: max-content;
 
   &__img-1 {
-    width: 158.7rem;
+    width: 200rem;
     height: auto;
     z-index: 1;
     position: absolute;

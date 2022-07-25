@@ -1,14 +1,13 @@
 // Sections
 
 .container {
-  max-width: 160rem;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   background-color: $color-primary;
   z-index: -10;
   overflow: hidden;
 }
-
 
 .content {
   width: 100%;
@@ -26,7 +25,6 @@
   flex: 1 1;
   max-width: 50%;
 }
-
 
 .image-cont {
   display: flex;

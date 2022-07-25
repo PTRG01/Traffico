@@ -1,5 +1,4 @@
 @keyframes truck_move {
-
   0% {
     transform: translateX(-75%);
   }
@@ -15,6 +14,31 @@
   100% {
     transform: translateX(0);
   }
+}
 
+.animation-l:hover {
+  transform: scale(105%);
+  box-shadow: $shadow-l;
+  transition: all 0.3s;
+}
 
+.animation-m:hover {
+  transform: scale(102%) !important;
+  box-shadow: $shadow-m;
+  transition: all 0.3s;
+}
+
+.animation-menu:hover {
+  transform: scale(105%) !important;
+  text-shadow: 0rem 0rem 1rem $color-accent-1;
+  transition: all 0.3s;
+  opacity: 1;
+}
+
+.animation-form:hover {
+  transform: scale(102%);
+  box-shadow: $shadow--solid-2, $shadow-s;
+  border-color: rgba($color-accent-1, 1);
+  border-width: medium;
+  transition: all 0.3s;
 }

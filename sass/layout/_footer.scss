@@ -4,21 +4,23 @@
   background-image: url("../../img/SVG/footer_bg.svg");
   height: auto;
   width: 100%;
+  margin-top: 40rem;
   background-origin: border-box;
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 140rem 73.6rem;
-
+  background-size: 150rem auto;
 
   &__row {
     margin: 0 auto;
-    @include flexbox(initial, space-between, initial);
+    @include flexbox(space-between);
     max-width: 117rem;
+    gap: 9.5rem;
     z-index: 10;
   }
 
   &__call {
     max-width: 38rem;
+    max-height: 16rem;
     padding: 3rem 3.5rem;
     margin-top: 20rem;
     border-left: 1rem solid rgba($color-accent-1, 1);
@@ -26,9 +28,8 @@
     z-index: 50;
   }
 
-
   &__copyright {
-    @include flexbox(initial, space-between, center);
+    @include flexbox(row, space-between, center);
     width: 100%;
     margin: 0 auto;
     z-index: 50;
@@ -37,26 +38,21 @@
   }
 
   &__icon-box {
-    @include flexbox(initial, initial, initial);
+    @include flexbox;
     max-width: 170rem;
     height: auto;
     gap: 3rem;
     margin-right: 10rem;
   }
-
-  &__icon--1:hover,
-  &__icon--1:active {
-    @include animation-1;
-  }
 }
 
 // Footer composition
 
-.footer__bg {
+.footer__background {
   position: relative;
   top: 0;
 
-  &--1 {
+  &__img-1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,7 +62,7 @@
     z-index: 20;
   }
 
-  &--2 {
+  &__img-2 {
     z-index: 50;
     position: absolute;
     top: 0;

@@ -1,34 +1,32 @@
-@mixin flexbox($direction, $justify, $align) {
+@mixin flexbox($direction: false, $justify: false, $align: false) {
   display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
+
+  @if ($direction) {
+    flex-direction: $direction;
+  }
+
+  @if ($justify) {
+    justify-content: $justify;
+  }
+
+  @if ($align) {
+    align-items: $align;
+  }
 }
 
-@mixin font($family, $size, $weight, $height, $color) {
-  font-family: $family;
+@mixin font($size, $height, $family: false, $weight: false, $color: false) {
   font-size: $size;
-  font-weight: $weight;
   line-height: $height;
-  color: $color
-}
 
-@mixin animation-1 {
-  transform: scale(105%);
-  box-shadow: $shadow-3;
-  transition: all .3s;
-}
+  @if ($family) {
+    font-family: $family;
+  }
 
-@mixin animation-2 {
-  transform: scale(102%);
-  box-shadow: $shadow-2;
-  transition: all .3s;
-}
+  @if ($weight) {
+    font-weight: $weight;
+  }
 
-@mixin animation-3 {
-  transform: scale(102%);
-  box-shadow: $shadow-3;
-  border-color: rgba($color-accent-1, 1);
-  border-width: medium;
-  transition: all .3s;
+  @if ($color) {
+    color: $color
+  }
 }

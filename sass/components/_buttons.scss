@@ -1,9 +1,9 @@
 // Buttons
 
-.btn--inline {
+.button {
   display: flex;
   max-width: 22rem;
-  height: auto;
+  max-height: 6rem;
   text-transform: uppercase;
   background-color: rgba($color-orange-1, 1);
   padding: 2rem 2.4rem 2rem 2.4rem;
@@ -12,8 +12,18 @@
   border-radius: 3px;
   @include font($font-secondary, 1.6rem, 700, 1.8rem, $color-text-2);
   z-index: 50;
+  transition: all .3s;
 }
 
-.button:hover {
-  @include animation-1;
+.button--secondary {
+  background-color: rgba($color-accent-1, .2) !important;
+  position: relative;
+  border-style: none;
+  border-radius: 5px;
+  width: 55rem;
+  height: 9rem;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  transition: all .3s;
 }

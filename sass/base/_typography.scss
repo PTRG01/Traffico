@@ -1,97 +1,62 @@
 // Headings
 
 .heading-1 {
-  @include font($font-primary, 10rem, 400, 10rem, $color-text-2);
+  @include font(10rem, 10rem, $font-primary, 400, $color-text-2);
   max-width: 70rem;
   margin-bottom: 6rem;
   z-index: 50;
 }
 
 .heading-2 {
-  @include font($font-secondary, 2.4rem, 700, 4rem, $color-accent-1);
-
+  @include font(2.4rem, 4rem, $font-secondary, 700, $color-accent-1);
 }
 
 .heading-3 {
-  @include font($font-primary, 4.8rem, 400, 6.7rem, $color-text-1);
+  @include font(4.8rem, 6.7rem, $font-primary, 700, $color-text-1);
 }
 
 //  Links
 
-.menu-link--1 {
-  @include font($font-secondary, 1.6rem, 700, 18rem, $color-text-2);
+.menu-link {
+  @include font(1.6rem, 1.8rem, $font-secondary, 700, $color-text-2);
   text-transform: uppercase;
-
 }
 
-.menu-link--2 {
+.menu-link--secondary {
   @include font($font-secondary, 1.6rem, 400, 18rem, $color-text-2);
   text-transform: uppercase;
-
-}
-
-.menu-link--2:hover,
-.menu-link--2:active {
-  @include animation-1;
-}
-
-.user-nav {
-  @include font($font-primary, 1.6rem, 700, 18rem, $color-text-2);
 }
 
 // Paragraphs
 
-.about__p {
-  @include font($font-secondary, 1.8rem, 300, 4rem, $color-text-1);
+.paragraph--primary {
+  @include font(1.8rem, 4rem, $font-secondary, 300, $color-text-1);
 }
 
-.about__call__p {
-  @include font($font-secondary, 2.4rem, 500, 3.6rem, $color-text-1);
+.paragraph--secondary {
+  @include font(2.4rem, 3.6rem, $font-secondary, 500, $color-text-1);
 }
 
-.apply__p {
-  @include font($font-secondary, 1.8rem, 300, 4rem, $color-text-1);
+.paragraph--tertiary {
+  @include font(1.6rem, 3rem, $font-secondary, 300, $color-text-1);
 }
 
-.faq__title p {
-  @include font($font-secondary, 1.8rem, 500, 3rem, $color-text-1);
+.paragraph--bright {
+  @include font(2rem, 3rem, $font-secondary, 400, $color-text-2);
 }
 
-.faq__desc {
-  @include font($font-secondary, 1.8rem, 300, 3rem, $color-text-1);
-}
+//  Buttons
 
-.clients__p {
-  @include font($font-secondary, 1.6rem, 300, 3rem, $color-text-1);
-}
-
-.clients-box__p {
-  @include font($font-secondary, 1.6rem, 700, 3rem, $color-text-1);
-}
-
-.footer__call__p {
-  @include font($font-secondary, 2rem, 400, 3rem, $color-text-2);
-}
-
-.footer__copyright {
-  @include font($font-secondary, 1.6rem, 300, 3rem, $color-text-1);
-}
-
-.footer__menu__item {
-  @include font($font-secondary, 1.6rem, 400, 1.9rem, $color-text-2);
+.button-text--secondary {
+  @include font(1.8rem, 3rem, $font-secondary, 700, $color-accent-1);
   text-transform: uppercase;
 }
-
+.button-text--arrow {
+  @include font(3rem, 3rem, $font-secondary, 700, $color-accent-1);
+  text-transform: uppercase;
+}
 // Form
 
-.form {
-
-  &__name,
-  &__email {
-    @include font($font-secondary, 1.8rem, 700, 4rem, $color-text-1);
-  }
-
-  &__example {
-    @include font($font-secondary, 1.6rem, 300, 4rem, $color-text-1);
-  }
+input::placeholder {
+  @include font($font-secondary, 1.6rem, 300, 4rem, $color-text-1);
 }

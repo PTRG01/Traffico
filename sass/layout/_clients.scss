@@ -2,7 +2,7 @@
 
 .clients {
   z-index: 500;
-  @include flexbox(initial, initial, initial);
+  @include flexbox;
   margin: 0 auto;
   max-width: 117rem;
 
@@ -12,8 +12,8 @@
     min-width: 30rem;
   }
 
-  &__carousel {
-    @include flexbox(column, initial, initial);
+  &__slider {
+    @include flexbox(column);
     margin-left: 8rem;
 
     &__nav {
@@ -25,27 +25,42 @@
     }
 
     &__cont {
+      width: 100%;
       @include flexbox(row, space-evenly, center);
-      mask-image: linear-gradient(90deg, black 40%, transparent);
-      -webkit-mask-image: linear-gradient(90deg, black 40%, transparent);
+      // mask-image: linear-gradient(90deg, black 40%, transparent);
+      // -webkit-mask-image: linear-gradient(90deg, black 40%, transparent);
+      position: relative;
     }
+    &__btn {
+      width: 3rem;
+      height: auto;
+      margin: 1.5rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      opacity: 0.5;
 
-    &__box {
-      @include flexbox(column, space-between, flex-start);
-      margin: 1rem;
-      margin-bottom: 3rem;
-      background-color: $color-text-2;
-      width: 43rem;
-      height: 36rem;
-      outline: 1rem solid transparent;
-      box-shadow: $shadow-2;
-      border-radius: 5px;
+      &--left {
+      }
+      &--right {
+      }
     }
+  }
 
-    &__box:hover {
-
-      @include animation-2;
-    }
+  &__slide {
+    @include flexbox(column, space-between, flex-start);
+    position: absolute;
+    top: 0;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    background-color: $color-text-2;
+    width: 43rem;
+    height: 36rem;
+    outline: 1rem solid transparent;
+    box-shadow: $shadow-m;
+    border-radius: 5px;
+    z-index: 50;
+    transition: all 1s ease-in-out;
 
     &__text {
       margin-bottom: 6rem;
@@ -53,30 +68,32 @@
       margin: 6rem 5.2rem 4rem 6rem;
     }
 
-    &__client-box {
-      @include flexbox(row, initial, center);
+    &__author-box {
+      @include flexbox(row, space-between, center);
+      max-width: 36rem;
       margin-left: 6rem;
       margin-bottom: 4rem;
     }
 
     &__photo {
-      max-width: 6rem;
+      max-width: 8rem;
       height: auto;
       margin-right: 2rem;
     }
+    &.active {
+      transform: translateX(0);
+      z-index: 50;
+      opacity: 1;
+    }
+    &.next {
+      transform: translateX(103%);
+      z-index: 20;
+      opacity: 0.9;
+    }
+    &.prev {
+      transform: translateX(206%);
+      z-index: 10;
+      opacity: 0.5;
+    }
   }
-}
-
-.arrow-cont {
-  width: 3rem;
-  height: auto;
-  margin: 1.5rem;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.arrow--1 {
-  transform: rotateY(180deg);
-  opacity: .4;
 }

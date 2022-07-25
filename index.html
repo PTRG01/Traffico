@@ -16,36 +16,37 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <title>Traffico - your awesome traffic permit consultant</title>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
   <div class="container">
     <header class="header">
-      <nav class="user-nav">
+      <nav class="header__nav">
         <img src="img/logo.png" alt="Traffico logo" class="logo">
-        <ul class="user-nav__menu">
-          <li class="user-nav__menu__item ">
-            <a class="menu-link--1" href="#">About us</a>
+        <ul class="header__nav__menu">
+          <li class="header__nav__menu__item animation-menu">
+            <a class="menu-link " href="#">About us</a>
           </li>
-          <li class="user-nav__menu__item">
-            <a class="menu-link--1" href="#">How to</a>
+          <li class="header__nav__menu__item animation-menu">
+            <a class="menu-link " href="#">How to</a>
           </li>
-          <li class="user-nav__menu__item ">
-            <a class="menu-link--1" href="#">FAQs</a>
+          <li class="header__nav__menu__item animation-menu">
+            <a class="menu-link" href="#">FAQs</a>
           </li>
-          <li class="user-nav__menu__item">
-            <button class="button btn--inline">Contact us
+          <li class="header__nav__menu__item animation-l">
+            <button class="button menu-link">Contact us
             </button>
           </li>
         </ul>
       </nav>
       <h1 class="heading-1">Your awesome traffic permit consultant.</h1>
-      <figure class="scene-cont">
-        <img class="scene-cont__img-1" src="img/svg/Scene.svg" alt="Background scene element">
-        <img class="scene-cont__img-2" src="img/svg/people.svg" alt="Background scene element">
-        <img class="scene-cont__img-3" src="img/svg/truck.svg" alt="Background scene element">
+      <figure class="header__content mb-m">
+        <img class="header__content__img-1" src="img/svg/Scene.svg" alt="Background scene element">
+        <img class="header__content__img-2" src="img/svg/people.svg" alt="Background scene element">
+        <img class="header__content__img-3" src="img/svg/truck.svg" alt="Background scene element">
       </figure>
-      <button class="button btn--inline">Get started &rarr;
+      <button class="button menu-link animation-l">Get started &rarr;
       </button>
     </header>
 
@@ -53,30 +54,26 @@
       <section class="about">
         <div class="section-column">
           <h2 class="heading-2">About us</h2>
-          <p class="about__p">The occupational traffic permit is one of the most important things in the
+          <p class="paragraph--primary">The occupational traffic permit is one of the most important things in the
             company when
             carrying out freight transport.<br> In fact, it is a prerequisite for doing business traffic at all. </p>
-          <p class="about_call about__call__p">How do you do when you need to obtain a commercial traffic permit for
+          <p class="about__call paragraph--secondary">How do you do when you need to obtain a commercial traffic permit
+            for
             freight
             transport
             to your business?</p>
         </div>
-
         <div class="section-column">
-          <figure class="about__image-cont">
-            <img class="about__img-1" src="img/svg/about.svg" alt="About section image">
-          </figure>
+          <img class="about__img-1" src="img/svg/about.svg" alt="About section image">
         </div>
       </section>
       <section class="apply mb-l">
         <div class="section-column">
-          <figure class="apply__image-cont">
-            <img class="apply__img-1" src="img/svg/apply.svg" alt="Apply section image">
-          </figure>
+          <img class="apply__content__img-1" src="img/svg/apply.svg" alt="Apply section image">
         </div>
         <div class="section-column">
           <h2 class="heading-2">How to apply</h2>
-          <p class="apply__p mb-l">When applying for a traffic permit, there are certain requirements that
+          <p class="paragraph--primary mb-l">When applying for a traffic permit, there are certain requirements that
             you
             must
             meet
@@ -101,20 +98,20 @@
         </div>
         <div class="faq__row">
           <ul class="faq__list">
-            <li class="faq__item">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item ">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
-                    <p>What is a professional traffic permit?</p>
+                    <p class="heading--secondary">What is a professional traffic permit?</p>
                   </div>
                 </summary>
                 <p class="faq__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>How to check the traffic condition?</p>
                   </div>
@@ -123,9 +120,9 @@
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>What are the requirements for a professional traffic permit?</p>
                   </div>
@@ -134,9 +131,9 @@
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>Are there professional traffic permit training courses at a distance?</p>
                   </div>
@@ -145,9 +142,9 @@
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>Are there professional traffic permit training courses at a distance?</p>
                   </div>
@@ -156,9 +153,9 @@
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item faq__hide">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item faq__hide">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>Are there professional traffic permit training courses at a distance?</p>
                   </div>
@@ -169,9 +166,9 @@
             </li>
           </ul>
           <ul class="faq__list">
-            <li class="faq__item">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>When is a professional traffic permit needed?</p>
                   </div>
@@ -180,9 +177,9 @@
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>Where to look for a traffic permit?</p>
                   </div>
@@ -191,9 +188,9 @@
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>Are there differences between a traffic permit and a professional traffic permit?</p>
                   </div>
@@ -202,9 +199,9 @@
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>How much does a commercial traffic permit cost for goods?</p>
                   </div>
@@ -213,9 +210,9 @@
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>How to plug in for the traffic permit test?</p>
                   </div>
@@ -224,9 +221,9 @@
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item faq__hide">
-              <details class=" faq__item-box">
-                <summary>
+            <li class="faq__list__item">
+              <details class="faq__list__item__box details animation-m">
+                <summary class="summary">
                   <div class="faq__title">
                     <p>How is the sample for a professional traffic permit booked?</p>
                   </div>
@@ -235,15 +232,10 @@
                   Suscipit magnam quidem excepturi quas. </p>
               </details>
             </li>
-            <li class="faq__item">
-              <!-- <input type="checkbox" id="toggle" class="faq-btn-hidden"> -->
-              <details class=" faq__item-box">
-                <summary>
-                  <div class="faq__title faq__btn">
-                    <p>Load more</p>
-                  </div>
-                </summary>
-              </details>
+            <li class="faq__list__item">
+              <button class="button--secondary details animation-m">
+                <p class="button-text--secondary">Load more</p>
+              </button>
             </li>
           </ul>
         </div>
@@ -255,93 +247,87 @@
             <p>Our Awesome Clients</p>
           </h3>
         </div>
-        <div class="clients__carousel">
-          <div class="clients__carousel__nav">
-            <button class="arrow-cont arrow--1">
-              <img class="carousel__arrow" src="img/svg/arrow.svg" alt='Arrow icon'> </button>
+        <div class="clients__slider mb-l">
+          <div class="clients__slider__nav">
+            <button class="clients__slider__btn clients__slider__btn--left animation-menu button-text--arrow">&larr;
+              </button>
 
-            <button class="arrow-cont arrow--2">
-              <img class="carousel__arrow" src="img/svg/arrow.svg" alt='Arrow icon'>
+            <button class="clients__slider__btn clients__slider__btn--right animation-menu button-text--arrow">
+              &rarr;
             </button>
           </div>
-          <div class="clients__carousel__cont">
-            <div class="clients__carousel__box">
-              <p class="clients__carousel__text clients__p">Yes, you will need to have the land owner sign the permit
-                application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
-              <div class="clients__carousel__client-box">
-                <img class="clients__carousel__photo" src="img/portrait1.png" alt="Client portrait 1">
-                <p class="client-box__p">Isak Pettersson</p>
+          <div class="clients__slider__cont">
+            <div class="clients__slide">
+              <blockquote class="clients__slide__text paragraph--tertiary">Yes, you will need to have the land owner sign the
+                permit
+                application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</blockquote>
+              <div class="clients__slide__author-box">
+                <img class="clients__slide__photo" src="img/portrait1.png" alt="Client portrait 1">
+                <p class="clients__slide__author">Isak Pettersson</p>
+              </div>
+            </div>
+            <div class="clients__slide next">
+              <blockquote class="clients__slide__text paragraph--tertiary">From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS) who can generate and certify the traffic control plan. </blockquote>
+              <div class="clients__slide__author-box">
+                <img class="clients__slide__photo" src="img/portrait2.png" alt="Client portrait 2">
+                <p class="clients__slide__author">Simon Sandberg</p>
+              </div>
+            </div>
+            <div class="clients__slide prev">
+              <blockquote class="clients__slide__text paragraph--tertiary">An A-Line, or access restriction deed is a property right that has been obtained by CDOT for the sole purpose of prohibiting direct </blockquote>
+              <div class="clients__slide__author-box">
+                <img class="clients__slide__photo" src="img/portrait3.png" alt="Client portrait 3">
+                <p class="clients__slide__author">Adam Jensen</p>
               </div>
             </div>
 
-            <div class="clients__carousel__box">
-              <p class="clients__carousel__text clients__p">From most barricade or traffic control companies located
-                in the phone book. They employ certified Traffic Control Supervisors (TCS) who can generate and
-                certify the traffic control plan. </p>
-              <div class="clients__carousel__client-box">
-                <img class="clients__carousel__photo" src="img/portrait2.png" alt="Client portrait 1">
-                <p class="client-box__p">Simon Sandberg</p>
-              </div>
-            </div>
-            <div class="clients__carousel__box">
-              <p class="clients__carousel__text clients__p">An A-Line, or access restriction deed is a property
-                right that has been obtained by CDOT for the sole purpose of prohibiting direct
-              </p>
-              <div class="clients__carousel__client-box">
-                <img class="clients__carousel__photo" src="img/portrait3.png" alt="Client portrait 1">
-                <p class="client-box__p">Adam Jensen</p>
-              </div>
-            </div>
 
           </div>
       </section>
     </div>
     <footer class="footer">
-      <div class="footer__bg">
-        <figure class="footer__bg--1">
+      <div class="footer__background">
+        <figure class="footer__background__img-1">
           <img src="img/svg/truck2.svg" alt='Background element'>
         </figure>
-        <figure class="footer__bg--2">
+        <figure class="footer__background__img-2">
           <img src="img/svg/truck3.svg" alt='Background element'>
         </figure>
       </div>
       <div class="footer__row mb-s">
-        <div class="section-column">
-          <p class="footer__call footer__call__p">We provide traffic management consultants so you get started quickly,
-            contact us for a
-            quote today!</p>
-        </div>
-        <div class="section__column">
-          <form class="footer__form-box" action="" method="get" class="form__example ">
-            <div class="form__example">
-              <label for="name">Name </label>
-              <input class="form__name" type="text" name="name" id="name" required placeholder="Hendrik Larsson">
-            </div>
-            <div class="form__example ">
-              <label for="email">Email adress </label>
-              <input class="form__email" type="email" name="email" id="email">
-            </div>
-            <div class="form__example form__example__button">
-              <input class="button btn--inline" type="submit" value="Get started &rarr;">
-            </div>
-          </form>
-        </div>
+        <p class="footer__call paragraph--bright">We provide traffic management consultants so you get started quickly,
+          contact us for a
+          quote today!</p>
+        <form class="form" action="" method="get" class="form__example ">
+          <div class="form__example">
+            <label for="form__name ">Name </label>
+            <input class="input__name animation-form" type="text" name="name" id="name" required
+              placeholder="Hendrik Larsson">
+          </div>
+          <div class="form__example ">
+            <label for="form__email">Email adress </label>
+            <input class="input__email animation-form" type="email" name="email" id="email"
+              placeholder="Your email adress">
+          </div>
+          <div class="form__example ">
+            <input class="button menu-link animation-m" type="submit" value="Get started &emsp; &rarr;">
+          </div>
+        </form>
       </div>
-
-      <div class="footer__row">
-        <nav class="footer__nav mb-m">
+      <div class="footer__row mb-l">
+        <nav class="footer__nav ">
           <figure class="logo">
             <img src="img/logo.png" alt="Traffico logo">
           </figure>
           <ul class="footer__nav__menu">
-            <li class="footer__nav__menu__item">
-              <a class="menu-link--2" href="#">About us</a>
+            <li class="footer__nav__menu__item animation-menu">
+              <a class="menu-link--secondary " href="#">About us</a>
             </li>
-            <li class="footer__nav__menu__item">
-              <a class="menu-link--2" href="#">How to</a>
+            <li class="footer__nav__menu__item animation-menu">
+              <a class="menu-link--secondary" href="#">How to</a>
             </li>
-            <li class="footer__nav__menu__item">
-              <a class="menu-link--2" href="#">FAQs</a>
+            <li class="footer__nav__menu__item animation-menu">
+              <a class="menu-link--secondary" href="#">FAQs</a>
             </li>
         </nav>
       </div>
@@ -350,20 +336,19 @@
           <p>Copyright &copy; 2019</p>
           <div class="footer__icon-box">
             <a href="#">
-              <img class="footer__icon--1" src="img/svg/instagram.svg" alt='Instagram icon'>
+              <img class="footer__icon--1 animation-menu" src="img/svg/instagram.svg" alt='Instagram icon'>
             </a>
             <a href="#">
-              <img class="footer__icon--1" src="img/svg/twitter.svg" alt='Twitter icon'>
+              <img class="footer__icon--1 animation-menu" src="img/svg/twitter.svg" alt='Twitter icon'>
             </a>
             <a href="#">
-              <img class="footer__icon--1" src="img/svg/facebook.svg" alt='Facebook icon'>
+              <img class="footer__icon--1 animation-menu" src="img/svg/facebook.svg" alt='Facebook icon'>
             </a>
           </div>
         </div>
       </div>
     </footer>
   </div>
-
   </div>
 </body>
 
